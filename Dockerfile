@@ -1,7 +1,7 @@
 FROM alpine:3.16
-LABEL MAINTAINER="Fabio Rauber <fabiorauber@gmail.com>"
+LABEL MAINTAINER="Fabio Rauber <fabiorauber@gmail.com> / Marcelo Genaro <marcelogenaro@gmail.com>"
 
-RUN apk add --no-cache bash postfix postfix-pcre 
+RUN apk add --no-cache bash postfix postfix-pcre cyrus-sasl cyrus-sasl-login 
 
 COPY conf /etc/postfix
 

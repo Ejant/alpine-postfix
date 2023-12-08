@@ -22,6 +22,11 @@ mydestination =
 # Relayhost if any is configured
 relayhost = {{ RELAYHOST }}
 
+smtp_use_tls = {{ TLS }}
+smtp_sasl_auth_enable = {{ SASL_AUTH }}
+smtp_sasl_security_options = noanonymous
+smtp_sasl_mechanism_filter = 
+
 ###############
 # Restrictions
 ###############
