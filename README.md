@@ -1,15 +1,15 @@
 # alpine-postfix
 
 
-Postfix docker container based on Alpine Linux (from Mailu/postfix)
+Postfix docker container based on Alpine Linux (from Mailu/postfix). 
 
 # Customized for using as relay with smtp.com email service
 
-The docker-compose.yaml file uses environment variables, so it's up to you to export them via external .env file or something else. If you like to put your environment vars in your compose file you are free to do that but I do not recommend this, you don't want to expose sensitive data in your repo.
+The **docker-compose.yaml** file uses environment variables, so it's up to you to export them via external .env file or something else. If you like to put your environment vars in your compose file you are free to do that but I do not recommend this, you don't want to expose sensitive data in your repo.
 
 # Postfix configuration files
 
-Located in conf directory, there is a main.cf custom file with the following settings:
+Located in **conf** directory, there is a main.cf custom file with the following settings:
 
 * DOMAIN: for setting up mydomain value
 * HOSTNAME: for setting up hostname value
@@ -23,7 +23,4 @@ I made this config because I only needed to modify those settings, you can custo
 
 
 # Auth file
-Under conf folder there is a sasl_passwd.map file (example). Here you can add your user/password to authenticate into your remote MX.
-
-
-
+Under conf folder there is a **sasl_passwd.map** file (example). Here you can add your user/password to authenticate into your remote MX. The postmap command automatically runs on the Docker image so there is no need to mess around with it.
