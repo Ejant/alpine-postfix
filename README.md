@@ -2,11 +2,10 @@
 
 
 Postfix docker container based on Alpine Linux (from Mailu/postfix). 
-** Tested against smtp.com and AWS SES Service. I can't ensure if will work out of the box for another MX providers**
 
-# Customized for using as relay with smtp.com email service
+# Customized for using as relay with smtp.com email service and AWS SES.
 
-This image is designed to work with smtp.com provider but you can set it up with whatever you like, it was tested against sendgrid and aws ses (you will have to modify some settings but it can work as well)
+This image is designed to work with smtp.com provider and/or AWS SES but you can set it up with whatever you like, it was tested against sendgrid as well but only for a few, I can't ensure that will work 100% with Sendgrid
 
 The **docker-compose.yaml** file uses environment variables, so it's up to you to export them via external .env file or something else. If you like to put your environment vars in your compose file you are free to do that but I do not recommend this, you don't want to expose sensitive data in your repo.
 
