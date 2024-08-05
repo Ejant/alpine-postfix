@@ -2,7 +2,7 @@
 
 
 Postfix docker container based on Alpine Linux (from Mailu/postfix). 
-** Tested against smtp.com and AWS SES Service. I can't ensure if will work out of the box for another MX providers **
+** Tested against smtp.com and AWS SES Service. I can't ensure if will work out of the box for another MX providers**
 
 # Customized for using as relay with smtp.com email service
 
