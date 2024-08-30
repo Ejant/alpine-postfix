@@ -1,0 +1,1 @@
+smtp_sasl_password_maps = lmdb:/etc/postfix/sasl_passwd.map
